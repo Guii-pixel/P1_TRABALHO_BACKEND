@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "48175a8f-456a-4e4b-931f-a538d32650c6",
+		"name": "P1-TRABALHO-BACKEND",
+		"description": "Collection de requisições para API Biblioteca Universitária ( Alunos, Professores, Livros, Empréstimos, Cursos)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39346581"
+	},
+	"item": [
+		{
+			"name": "REQUISIÇÃO DE LIVROS",
+			"item": [
+				{
+					"name": "Lista livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista livros por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adiciona novo livro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza Livros",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta livro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REQUISIÇÃO DE ALUNOS",
+			"item": [
+				{
+					"name": "Lista alunos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista aluno por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alunos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alunos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria novo aluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Guilherme Almeida\",\r\n  \"email\": \"guilherme@email.com\",\r\n  \"cpf\": \"12345678900\",\r\n  \"telefone\": \"11999999999\",\r\n  \"dataNascimento\": \"2000-05-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/alunos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alunos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza o aluno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alunos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alunos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alunos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alunos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REQUISIÇÃO DE PROFESSORES",
+			"item": [
+				{
+					"name": "Lista professores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/professores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista professores por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/professores/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"professores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria professor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Carlos Vidal\",\r\n  \"email\": \"carlos@uni.com\",\r\n  \"cpf\": \"98765432122\",\r\n  \"curso\": \"Direito\",\r\n  \"disciplina\": \"Direito Administrativo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/professores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"professores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza professor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Carlos Vidal\",\r\n  \"email\": \"carlos@uni.com\",\r\n  \"cpf\": \"98765432122\",\r\n  \"curso\": \"Direito\",\r\n  \"disciplina\": \"Direito Constitucional\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/professores/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"professores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta professor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/professores/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"professores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REQUISIÇÃO DE CURSOS",
+			"item": [
+				{
+					"name": "Lista curso",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Carlos Vidal\",\r\n  \"email\": \"carlos@uni.com\",\r\n  \"cpf\": \"98765432122\",\r\n  \"curso\": \"Direito\",\r\n  \"disciplina\": \"Direito Administrativo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/cursos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista curso por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Carlos Vidal\",\r\n  \"email\": \"carlos@uni.com\",\r\n  \"cpf\": \"98765432122\",\r\n  \"curso\": \"Direito\",\r\n  \"disciplina\": \"Direito Administrativo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/cursos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cursos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria novo curso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Engenharia de Softaware\",\r\n  \"duracao\": \"10 semestres\",\r\n  \"modalidade\": \"Presencial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cursos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza curso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Engenharia de Softaware\",\r\n  \"duracao\": \"9 semestres\",\r\n  \"modalidade\": \"Presencial\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/cursos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cursos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta curso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cursos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cursos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REQUISIÇÃO DE EMPRESTIMO",
+			"item": [
+				{
+					"name": "Lista emprestimos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista emprestimos por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cria um novo emprestimo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"alunoId\": 2,\r\n  \"livroId\": 2,\r\n  \"dataEmprestimo\": \"2025-09-02\",\r\n  \"dataDevolucao\": \"2025-09-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza emprestimo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"alunoId\": 2,\r\n  \"livroId\": 2,\r\n  \"dataEmprestimo\": \"2025-09-02\",\r\n  \"dataDevolucao\": \"2025-09-16\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta emprestimo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lista livros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista livros por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/livros/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona novo livro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Livros",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/livros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta livro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Backend na prática\",\r\n  \"autor\": \"Artur Carlos\",\r\n  \"ano\": 2021,\r\n  \"isbn\": \"456-321\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/livros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

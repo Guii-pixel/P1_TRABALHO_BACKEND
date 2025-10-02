@@ -1,4 +1,4 @@
-Biblioteca.api
+###### Nome do projeto: Biblioteca.api
 
 
 ##### Descrição breve:
@@ -15,10 +15,9 @@ O projeto contém 5 CRUDs completos:
 
 - Cursos
 
-Este trabalho atende aos requisitos do Trabalho Prático P1 – Construção de Backend, utilizando rotas REST, versionamento com GitHub, Postman para testes e colaboração em equipe.
+Este trabalho atende aos requisitos do Trabalho Prático P1 – Construção de Backend, utilizando rotas REST, versionamento com GitHub, Postman para testes e colaboração em equipe
 
-
-####### Instalação e Execução:
+###### Instalação e Execução:
 
 1.Clone este repositório:
 
@@ -32,8 +31,8 @@ npm install
 npm start
 
 
-######Endpoints da API:
-###Alunos
+###### Endpoints da API:
+### Alunos
 
 GET /alunos → Lista todos os alunos
 
@@ -64,7 +63,7 @@ Exemplo de resposta:
   "dataNascimento": "2000-05-10"
 }
 
-###Professores
+#### Professores
 GET /professores
 
 GET /professores/:id
@@ -95,11 +94,11 @@ Exemplo de resposta:
 
 
 
-#########Integrantes da Equipe:
+###### Integrantes da Equipe:
 - Guilherme Almeida Siqueira (@Guii-pixel) → Configuração inicial do projeto + CRUD de Alunos + Requisições de alunos
 
 - Alisson dos Santos Teixeira (@Alisson10101010) → CRUD de Professores + Requisições de professores
 
-- Rhayner de Paiva Oliveira Mendonça (@Rhaynerzin) → CRUD de Livros + Requisições de livros
+- Rhayner de Paiva Oliveira Mendonça (@Rhaynerzin) → CRUD de Livros + Requisições de livros + Criação da Collection do Postman
 
 - Diego Sousa Leal (@dg23nrt) → CRUD de Empréstimos e Cursos + Requisições de empréstimos e cursos

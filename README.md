@@ -99,6 +99,6 @@ Exemplo de resposta:
 
 - Alisson dos Santos Teixeira (@Alisson10101010) → CRUD de Professores + Requisições de professores
 
-- Rhayner de Paiva Oliveira Mendonça (@Rhaynerzin) → CRUD de Livros + Requisições de livros + Criação da Collection do Postman
+- Rhayner de Paiva Oliveira Mendonça (@Rhaynerzin) → CRUD de Livros + Requisições de livros 
 
 - Diego Sousa Leal (@dg23nrt) → CRUD de Empréstimos e Cursos + Requisições de empréstimos e cursos
